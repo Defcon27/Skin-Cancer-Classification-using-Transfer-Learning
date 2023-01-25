@@ -17,14 +17,14 @@ GAP
 </div>
 
 
-## 📌Introduction
+### 📌 Introduction
 <h4 align="justify" >
 According to the Skin Cancer Foundation statistics, skin cancer is known to be the most common cancer in the United States and worldwide. By the age of seventy years, about twenty percent of Americans will have developed skin cancer due to exposure to radiation. Of all the types of skin cancers, melanoma is particularly deadly and responsible for most skin cancer deaths. Therefore, early detection is the key to survival. An automatic skin lesion diagnosis system can assist dermatologists since its challenging to differentiate between the different classes of skin lesions. In this paper, we propose a transfer learning based deep learning system using deep convolutional neural networks that leverage residual connections to perform the mentioned task with high accuracy. The HAM10000 dataset was utilized for training and testing the model and comparing its performance with other pre-trained models. This kind of automated classification system can be integrated into a computeraided diagnosis (CAD) system pipeline to assist in the early detection of skin cancer.
 </h4>
 <p><br></p>
 
 
-## 🗃️Dataset
+### 🗃️ Dataset
 <p align="justify">
 A public dataset from the International Skin Imaging Collaboration (ISCI) archive was obtained for this work known as HAM10000. It is quite a large dataset that consists of 10015 samples of multi-source dermatoscopic images of common pigmented skin lesions.</p>
 
@@ -32,7 +32,7 @@ Get the data [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi
 <p><br></p>
 
 
-## Residual Connections based Transfer Learning Approach using Modified Inception-ResNetV2
+## Modified Inception-ResNetV2 Model Architecture
 <p align="middle"> <img src='Docs/model_architecture.png' width=75%/></p>
 <p align="justify">
 We modified the Inception-ResNetV2 architecture, which belongs to the inception family but improved with the help of residual connections instead of the conventional filter concatenation stage. It combines the two architectures of Inception and Residual networks to obtain more solid performance but at the same time keeping the computational costs relatively low. It consists of a stem block, three sets of residual inception block modules with [5,10,5] blocks of Inception-ResNetA, Inception-RetNetB, Inception-RetNetC modules, respectively, and subsequently pooling layer after each set of Inception-ResNet modules, all of which are connected sequentially. With a total of 164 layers, this deep convolutional network is capable of learning rich feature representation for broad categories of image data
@@ -42,16 +42,16 @@ We modified the Inception-ResNetV2 architecture, which belongs to the inception 
 
 ## Conclusion
 <p align="justify">
-In this paper, we have taken up the task of multi-class classification of skin lesions from dermatoscopic images in the HAM10000 dataset using deep convolutional neural networks, alleviating the need for complex feature engineering. We leveraged transfer learning by using pre-trained models and modified the Inception-ResNetV2 architecture to the required problem.
+In this paper, we have taken up the task of multi-class classification of skin lesions from dermatoscopic images in the HAM10000 dataset using deep convolutional neural networks, alleviating the need for complex feature engineering. We leveraged transfer learning by using pre-trained models and modified the Inception-ResNetV2 architecture to the required problem. The model achieved an accuracy of 90.08% with an F1-score of 89%, outperforming the rest.
 </p>
 <p><br></p>
 
 
-## 📝Citation
+### 📝 Citation
 If you found this code helpful please consider citing,
 ```
 Kollipara, V.N.H., Kollipara, V.N.D.P. (2022). Residual Learning Based Approach for Multi-class Classification of Skin Lesion Using Deep Convolutional Neural Network. In: Guru, D.S., Y. H., S.K., K., B., Agrawal, R.K., Ichino, M. (eds) Cognition and Recognition. ICCR 2021. Communications in Computer and Information Science, vol 1697. Springer, Cham. https://doi.org/10.1007/978-3-031-22405-8_27
 ```
 
-### ⚖️License
+### ⚖️ License
 Copyright © 2023 Hemanth Kollipara, Pavithra Kollipara
