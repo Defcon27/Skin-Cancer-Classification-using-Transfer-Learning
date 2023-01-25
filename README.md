@@ -33,7 +33,7 @@ Get the data [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi
 
 
 ## Modified Inception-ResNetV2 Model Architecture
-<p align="middle"> <img src='Docs/model_architecture.png' width=75%/></p>
+<p align="middle"> <img src='docs/model_architecture.png' width=60%/></p>
 <p align="justify">
 We modified the Inception-ResNetV2 architecture, which belongs to the inception family but improved with the help of residual connections instead of the conventional filter concatenation stage. It combines the two architectures of Inception and Residual networks to obtain more solid performance but at the same time keeping the computational costs relatively low. It consists of a stem block, three sets of residual inception block modules with [5,10,5] blocks of Inception-ResNetA, Inception-RetNetB, Inception-RetNetC modules, respectively, and subsequently pooling layer after each set of Inception-ResNet modules, all of which are connected sequentially. With a total of 164 layers, this deep convolutional network is capable of learning rich feature representation for broad categories of image data
 </p>
@@ -41,6 +41,7 @@ We modified the Inception-ResNetV2 architecture, which belongs to the inception 
 
 
 ## Conclusion
+<p align="middle"> <img src='docs/results.png' width=40%/></p>
 <p align="justify">
 In this paper, we have taken up the task of multi-class classification of skin lesions from dermatoscopic images in the HAM10000 dataset using deep convolutional neural networks, alleviating the need for complex feature engineering. We leveraged transfer learning by using pre-trained models and modified the Inception-ResNetV2 architecture to the required problem. The model achieved an accuracy of 90.08% with an F1-score of 89%, outperforming the rest.
 </p>
